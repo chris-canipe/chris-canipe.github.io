@@ -14,7 +14,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
     />
-    <script src="https://kit.fontawesome.com/d1417e9ba1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d1417e9ba1.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -40,7 +43,7 @@
       }
 
       [data-bs-toggle="modal"] {
-       cursor: pointer; 
+        cursor: pointer;
       }
 
       .formal {
@@ -118,50 +121,56 @@
           <tr>
             <th>Mood</th>
             <th>Ending</th>
-            <th
-              colspan="2"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-title="Things happening now."
-            >
-              Presente
+            <th colspan="2">
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Things happening now."
+                >Presente</span
+              >
             </th>
-            <th
-              colspan="2"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-title="Completed actions in the past."
-            >
-              Preterite
+            <th colspan="2">
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Completed actions in the past."
+                >Preterite</span
+              >
             </th>
-            <th
-              colspan="2"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-title="Past habitual actions."
-            >
-              Imperfect
-              <i
-                class="fa-solid fa-info-circle fa-flip-vertical"
-                data-bs-toggle="modal"
-                data-bs-target="#imperfectIrregulars"
-              />
+            <th colspan="2">
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Past habitual actions."
+                >Imperfect</span
+              >
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="View irregulars"
+              >
+                <i
+                  class="fa-solid fa-info-circle fa-flip-vertical"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imperfectIrregulars"
+                ></i>
+              </span>
             </th>
-            <th
-              colspan="2"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-title="Hypothetical situations."
-            >
-              Conditional
+            <th colspan="2">
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Hypothetical situations."
+                >Conditional</span
+              >
             </th>
-            <th
-              colspan="2"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              data-bs-title="Talk about what will happen."
-            >
-              Future
+            <th colspan="2">
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Talk about what will happen."
+                >Future</span
+              >
             </th>
           </tr>
         </thead>
@@ -357,12 +366,26 @@
       </table>
     </div>
 
-    <div class="modal fade" id="imperfectIrregulars" tabindex="-1" aria-labelledby="imperfectIrregularsLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="imperfectIrregulars"
+      tabindex="-1"
+      aria-labelledby="imperfectIrregularsLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="imperfectIrregularsLabel">Imperfect: Irregulars</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="imperfectIrregularsLabel">
+              <i class="fa-solid fa-info-circle fa-flip-vertical"></i>
+              Imperfect: Irregulars
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <div class="table-responsive">
@@ -370,18 +393,12 @@
                 <thead>
                   <tr>
                     <th>Verb</th>
-                    <th
-                      colspan="2"
-                    >
-                      Imperfect
-                    </th>
+                    <th colspan="2">Imperfect</th>
                   </tr>
                 </thead>
                 <tbody class="table-group-divider">
                   <tr>
-                    <td rowspan="3">
-                      ser
-                    </td>
+                    <td rowspan="3">ser</td>
                     <td>era</td>
                     <td>éramos</td>
                   </tr>
@@ -395,9 +412,7 @@
                   </tr>
 
                   <tr>
-                    <td rowspan="3">
-                      ir
-                    </td>
+                    <td rowspan="3">ir</td>
                     <td>iba</td>
                     <td>íbamos</td>
                   </tr>
@@ -411,9 +426,7 @@
                   </tr>
 
                   <tr>
-                    <td rowspan="3">
-                      ver
-                    </td>
+                    <td rowspan="3">ver</td>
                     <td>veía</td>
                     <td>veíamos</td>
                   </tr>
@@ -430,7 +443,13 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
